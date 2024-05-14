@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  get "/practice-route" => "contacts#hello"
+  get "/show-contacts" => "contacts#first"
+  get "/all-contacts" => "contacts#all"
 
 end
