@@ -21,3 +21,8 @@
 # contact = Contact.new(first_name: "Steven", last_name: "Rojas", email: "stevenrojas@gmail.com", phone_number: 4127862141) 
 # contact = Contact.find_by(id: 7)
 # contact.destroy
+
+3.times do
+contact = Contact.new(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, phone_number: Faker::PhoneNumber.phone_number)
+contact.save
+end
